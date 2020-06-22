@@ -6,7 +6,8 @@ ${url}    http://training-wheels-protocol.herokuapp.com/
 
 **Keywords***
 Nova sessao
-    Open Browser    ${url}    chrome
+    Open Browser               ${url}    chrome
+    Capture Page Screenshot
 
 Encerrar sessao
     Sleep            2
