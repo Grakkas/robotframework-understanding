@@ -1,8 +1,8 @@
 ***Settings***
-Library    SeleniumLibrary
+Resource         base.robot
+Test Setup       Nova sessao
+Test Teardown    Encerrar sessao
 
 **Test Cases***
 Should see page title
-    Open Browser       http://training-wheels-protocol.herokuapp.com/    chrome
     Title Should Be    Training Wheels Protocol
-    Close Browser
