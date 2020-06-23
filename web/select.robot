@@ -9,12 +9,14 @@ ${select_Loki}         6
 
 ***Test Cases***
 Should select an option by its Label
+    [tags]                       select_SelectByLabel
     Go To                        ${url}/dropdown
     Select From List By Label    class:avenger-list         ${select_ScottLang} 
     ${selected}=                 Get Selected List Value    class:avenger-list
     Should Be Equal              ${selected}                7
 
 Should select an option by its Value
+    [tags]                       select_SelectByValue
     Go To                        ${url}/dropdown
     Select From List By Value    id:dropdown                ${select_Loki} 
     ${selected}=                 Get Selected List Label    class:avenger-list
